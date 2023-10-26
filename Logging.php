@@ -4,7 +4,7 @@ require 'DB_Config.php';
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Get data from the form
     $Student_ID = $_POST["Student_ID"];
-    $ClassId = $_POST["Class_id"];
+    $ClassId = $_POST["Class_ID"];
     $PC_No = $_POST["PC_NO"];
     $Log_In = $_POST["Log_In"];
     $Log_Out = $_POST["Log_Out"];
