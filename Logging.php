@@ -3,7 +3,7 @@ require 'DB_Config.php';
 // Handle the form submission
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Get data from the form
-    $StudentId = $_POST["Student_id"];
+    $Student_ID = $_POST["Student_ID"];
     $ClassId = $_POST["Class_id"];
     $PC_No = $_POST["PC_NO"];
     $Log_In = $_POST["Log_In"];
@@ -18,7 +18,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     // Insert data into the LabLog table
-    $sql = "INSERT INTO lablog (StudentID, Class_ID, PC_No, Log_In, Log_Out) VALUES ('$studentId', '$classId', '$pcNo', '$timeIn', '$timeOut')";
+    $sql = "INSERT INTO lablog (StudentID, Class_ID, PC_No, Log_In, Log_Out) VALUES ('$Student_ID', '$Class_ID', '$PC_No', '$Log_In', '$Log_Out')";
 
     if (mysqli_query($conn, $sql)) {
         echo "Record added successfully!";
